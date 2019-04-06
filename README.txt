@@ -1,7 +1,4 @@
-A cross-platform uptime for the Python.
+An uptime for the Python.
 
-See documentation for a full list of supported platforms:
-http://packages.python.org/uptime/
-
-Report bugs via email to cairnarvon@gmail.com, or on Github:
-https://github.com/Cairnarvon/uptime/issues
+this is a for of the original python-uptime module,
+if you want a crossplatform flavour, visit https://github.com/Cairnarvon/uptime/issues

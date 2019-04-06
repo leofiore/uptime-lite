@@ -1,12 +1,10 @@
-A cross-platform uptime for the Python. To install it, just do:
+An uptime module for the Python.
 
-```
-$ pip install uptime
-```
+Unlike the [original project](https://github.com/Cairnarvon/uptime), this fork
+is linux-only. It doesn't require a C compiler to be installed. It is useful
+in case you need, say, to build a multiarch debian package (like i do).
 
-Assuming you have [pip](http://www.pip-installer.org/) installed. If you don't, a tarball is [also available](http://pypi.python.org/pypi/uptime/).
-
-Then just use it like this:
+Just use it like this:
 
 ```python
 from uptime import uptime
@@ -26,7 +24,3 @@ Booted: Wed Oct 10 06:28:24 2012 CET.
 (You may need to use `uptime.__main__`, depending on your version of Python.)
 
 Full documentation [here](http://pythonhosted.org/uptime/). Works with any version of Python from 2.5 on, including Python 3.
-
-Tested on a bunch of platforms, expected to work on a bunch more. See the documentation for details.
-
-For a list of platforms I'm working on adding, see [here](TODO.md). Know any others I should add? [Let me know.](https://github.com/Cairnarvon/uptime/issues)

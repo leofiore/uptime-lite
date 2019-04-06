@@ -121,7 +121,10 @@ def run_suite(suite):
                              (head, '⎻' * len(head)))
 
         for problem in problems:
-            func = problem[0]._testMethodName[5:]
+            if hasattr(problem[0], '_testMethodName'):
+                func = problem[0]._testMethodName[5:]
+            else:
+                func = str(problem[0])
             environ = ' (broken ctypes)' if isinstance(problem[0],
                                                        BrokenCtypesTest) \
                                          else ''
