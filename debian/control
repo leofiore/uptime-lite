@@ -1,0 +1,14 @@
+Source: uptime
+Maintainer: leofiore <leofiore@local>
+Section: python
+Priority: optional
+Build-Depends: dh-python, debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/leofiore/uptime
+
+Package: python-uptime
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, ${shlibs:Depends}
+Description: uptime library
+ This module provides a way to retrieve system uptime and boot time.
+
