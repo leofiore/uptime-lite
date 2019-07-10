@@ -1,8 +1,11 @@
 #!/usr/bin/make -f
 
-DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
-
 export PYBUILD_NAME=uptime
+export PYBUILD_VERSIONS=2.7 3.5
+export PYBUILD_DESTDIR_python2=debian/python-uptime/
+export PYBUILD_DESTDIR_python3=debian/python3-uptime/
+export DH_VERBOSE=1
 %:
-	dh $@ --with python2 --buildsystem=pybuild
+	dh $@ --with python2,python3 --buildsystem=pybuild
 
+override_dh_auto_test:
